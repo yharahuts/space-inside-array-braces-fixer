@@ -1,0 +1,13 @@
+.git*
+bin
+Dockerfile
+*.Dockerfile
+docker-compose*
+phpunit*
+README.md
+.dockerignore
+.gitignore
+.php-cs-fixer.cache
+auth.json
+psalm.xml
+tests/

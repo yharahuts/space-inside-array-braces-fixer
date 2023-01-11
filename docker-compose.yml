@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+
+  test-code:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: code-tests
+    restart: "no"
+    working_dir: /app
+    volumes:
+      - ./:/app

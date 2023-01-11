@@ -1,0 +1,41 @@
+{
+    "name": "yharahuts/space-inside-array-braces-fixer",
+    "type": "library",
+    "description": "Custom rule for php-cs-fixer to add spaces inside array braces",
+    "license": "MIT",
+    "authors": [
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Codestyle\\Fixer\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10",
+        "friendsofphp/php-cs-fixer": "~3.13",
+        "tareq1988/wp-php-cs-fixer": "dev-master",
+        "vimeo/psalm": "5.x-dev"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": {
+            "friendsofphp/php-cs-fixer": "source",
+            "*": "dist"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --no-coverage --colors=always",
+        "test-coverage": "vendor/bin/phpunit --colors=always",
+        "format": "vendor/bin/php-cs-fixer fix",
+        "format-check": "vendor/bin/php-cs-fixer fix --dry-run -vv",
+        "psalm": "vendor/bin/psalm"
+    }
+}

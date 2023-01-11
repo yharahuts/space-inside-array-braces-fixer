@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<psalm
+        errorLevel="7"
+        resolveFromConfigFile="true"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://getpsalm.org/schema/config"
+        xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+        findUnusedBaselineEntry="true"
+        findUnusedCode="false"
+>
+    <projectFiles>
+        <directory name="src" />
+
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+
+    <issueHandlers>
+        <DeprecatedClass>
+            <errorLevel type="error"/>
+        </DeprecatedClass>
+
+        <DeprecatedConstant>
+            <errorLevel type="error"/>
+        </DeprecatedConstant>
+
+        <DeprecatedFunction>
+            <errorLevel type="error"/>
+        </DeprecatedFunction>
+
+        <DeprecatedInterface>
+            <errorLevel type="error"/>
+        </DeprecatedInterface>
+
+        <DeprecatedMethod>
+            <errorLevel type="error"/>
+        </DeprecatedMethod>
+
+        <DeprecatedProperty>
+            <errorLevel type="error"/>
+        </DeprecatedProperty>
+
+        <DeprecatedTrait>
+            <errorLevel type="error"/>
+        </DeprecatedTrait>
+    </issueHandlers>
+</psalm>
